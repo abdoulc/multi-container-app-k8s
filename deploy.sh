@@ -1,6 +1,6 @@
 docker build -t abdoultodocker/client:latest -t abdoultodocker/client:$GIT_SHA -f ./client/Dockerfile ./client
-docker build -t abdoultodocker/server:latest -t abdoultodocker/server:$GIT_SHA -f ./client/Dockerfile ./server
-docker build -t abdoultodocker/worker:latest -t abdoultodocker/worker:$GIT_SHA -f ./client/Dockerfile ./worker
+docker build -t abdoultodocker/server:latest -t abdoultodocker/server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t abdoultodocker/worker:latest -t abdoultodocker/worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push abdoultodocker/client:latest
 docker push abdoultodocker/worker:latest
