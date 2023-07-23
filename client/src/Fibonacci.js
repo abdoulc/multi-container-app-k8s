@@ -35,7 +35,8 @@ class Fibonacci extends Component{
     }
 
     renderSeenIndexes(){
-        return this.state.seeIndexes.map(({number})=> number).join(', ')
+        //return this.state.seeIndexes.map(({number})=> number).join(', ')
+        return [1,2,3];
     }
 
     renderValues(){
